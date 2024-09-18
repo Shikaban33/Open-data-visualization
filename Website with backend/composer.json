@@ -1,0 +1,6 @@
+{
+    
+    "require-dev": {
+        "phpoffice/phpspreadsheet": "^2.0"
+    }
+}

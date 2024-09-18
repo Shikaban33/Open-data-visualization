@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.chartMenu {
+    width: 100vw;
+    height: 40px;
+    background: #1A1A1A;
+    color: rgba(54, 162, 235, 1);
+}
+
+.chartMenu p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.background {
+    background: rgba(54, 162, 235, 0.2);
+    padding: 10px;
+}
+
+.chartCard {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+
+}
+.chartCardV2{
+    width: 100%;
+    
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+}
+.menu{
+    width: 100%;
+    height: calc(30vh - 100px);
+    display: flex;
+    align-items: center;
+    
+    margin-bottom: -20;
+}
+.menubox{
+    flex:100%;
+    display: flex;
+    padding: 100px;
+    border-radius: 20px;
+
+}
+#loading{
+    background-color: #6e747c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 50px;
+}
+
+.chartCard:nth-child(2) {
+    height: calc(100vh - 190px);
+}
+
+
+.chartBox {
+    flex: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px rgba(54, 162, 235, 1);
+    background: white;
+}
+.chartBoxV2 {
+    flex: 50%;
+    padding: 0px;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: solid 3px rgba(54, 162, 235, 1);
+    background: white;
+}
+
+.chartBox:first-child {
+    margin-right: 20px;
+}
+.chartBox:nth-child(2) {
+    overflow-y: scroll;
+    max-height: 515px;
+    min-height: 515px;
+}
+
+#secondRow {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-height: 515px;
+    min-height: 515px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#secondRowV2 {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-height: 515px;
+    min-height: 515px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#secondRowV2:first-child {
+    margin-right: 20px;
+}
+
+#PieChart {
+    height: 100%;
+    width: 100%;
+}
+
+.box_y {
+    height: 500px;
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.box_x {
+    width: 700px;
+    max-width: 700px;
+    overflow-x: scroll;
+}
+
+.sub_box_x {
+    height: 250px;
+}
+
+#myTable {
+    padding: 5px;
+}
+
+#searchBar {
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    border-radius: 100px;
+}
+
+#myTable td {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#myTable td:nth-child(2) {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #dfdfdf
+}
+
+tr:nth-child(odd) {
+    background: #FFF
+}
+
+/* Define the style for the tooltip */
+.tooltip {
+    position: relative;
+    display: block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.716);
+    color: white;
+    /*text-align: center;*/
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    /* Position the tooltip text in the center */
+    opacity: 0;
+    /* Initially hide the tooltip */
+    transition: opacity 0.3s ease-in-out;
+    /* Add animation for opacity change */
+}
+
+td:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    /* Show the tooltip with animation */
+}
+
+.custom-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+}
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=button] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  input[type=button]:hover {
+    background-color: #0056b3;
+  }
+  #submittedText {
+    color: white;
+  }
+/* Show the tooltip text when you mouse over the tooltip container */
